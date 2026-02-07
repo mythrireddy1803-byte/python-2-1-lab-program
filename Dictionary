@@ -1,0 +1,43 @@
+# Creating a dictionary
+student = {
+    'name': 'Ravi',
+    'age': 20,
+    'course': 'B.Tech',
+    'subjects': ['Python', 'Data Structures', 'Machine Learning']
+}
+print("Original Dictionary:", student)
+# Accessing elements
+print("\nAccessing Values:")
+print("Name:", student['name'])
+print("Age:", student.get('age'))
+# Adding / Updating key-value pairs
+student['year'] = 2023           # Adding new key-value
+student['age'] = 21              # Updating existing key
+print("\nAfter Add & Update:", student)
+# Removing elements
+removed_age = student.pop('age')          # Removes specific key
+popped_item = student.popitem()           # Removes last inserted key-value pair
+del student['course']                     # Delete key using del
+print("\nAfter Remove Operations:")
+print("Removed age:", removed_age)
+print("Popped item:", popped_item)
+print("Updated Dictionary:", student)
+# Dictionary Methods
+print("\nDictionary Methods:")
+print("Keys:", student.keys())
+print("Values:", student.values())
+print("Items:", student.items())
+# Looping through dictionary
+print("\nLooping:")
+for key, value in student.items():
+    print(f"{key}: {value}")
+# Merging dictionaries
+new_data = {'city': 'Bangalore', 'year': 2024}
+student.update(new_data)
+print("\nAfter Merge:", student)
+# Dictionary Comprehension (example)
+squares = {i: i**2 for i in range(1, 6)}
+print("\nSquares Dictionary (Comprehension):", squares)
+# Checking existence
+if 'name' in student:
+    print("\n'name' key exists.")
