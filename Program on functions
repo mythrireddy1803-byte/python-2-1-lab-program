@@ -1,0 +1,8 @@
+def add_numbers(a, b):
+    def inner_add(x, y):
+        return x + y
+    return inner_add(a, b)
+a = int(input('Enter a value: '))
+b = int(input('Enter b value: '))
+result = add_numbers(a, b)
+print('The addition of %d and %d is %d' % (a, b, result))
