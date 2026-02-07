@@ -1,0 +1,33 @@
+# Creating sets
+A = {1, 2, 3, 4, 5}
+B = {4, 5, 6, 7, 8}
+print("Set A:", A)
+print("Set B:", B)
+# Union
+union_set = A | B
+print("Union of A and B:", union_set)
+# Intersection
+intersection_set = A & B
+print("Intersection of A and B:", intersection_set)
+# Difference
+difference_set = A - B
+print("Difference of A and B (A-B):", difference_set)
+# Symmetric Difference
+symmetric_difference_set = A ^ B
+print("Symmetric Difference of A and B:", symmetric_difference_set)
+# Subset and Superset
+C = {1, 2, 3}
+print("Is C a subset of A?", C.issubset(A))
+print("Is A a superset of C?", A.issuperset(C))
+# Add and Remove elements
+A.add(9)
+print("A after adding 9:", A)
+A.remove(2)
+print("A after removing 2:", A)
+# Set methods
+print("Length of A:", len(A))
+print("Is 3 in A?", 3 in A)
+print("Is 10 in A?", 10 in A)
+# Clearing a set
+A.clear()
+print("A after clearing:", A)
