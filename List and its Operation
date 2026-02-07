@@ -1,0 +1,28 @@
+# Creating a tuple
+fruits = ('Apple', 'Banana', 'Cherry', 'Date', 'Elderberry')
+print("Original tuple:", fruits)
+# Accessing elements
+print("First element:", fruits[0])
+print("Last element:", fruits[-1])
+# Tuple slicing
+print("Elements from 1 to 3:", fruits[1:4])
+# Tuple concatenation
+more_fruits = ('Fig', 'Grape')
+all_fruits = fruits + more_fruits
+print("Concatenated tuple:", all_fruits)
+# Tuple repetition
+repeated_fruits = fruits * 2
+print("Repeated tuple:", repeated_fruits)
+# Tuple methods
+print("Count of 'Apple':", fruits.count('Apple'))
+print("Index of 'Banana':", fruits.index('Banana'))
+# Tuple unpacking
+fruit1, fruit2, *remaining_fruits = fruits
+print("First fruit:", fruit1)
+print("Second fruit:", fruit2)
+print("Remaining fruits:", remaining_fruits)
+# Trying to modify a tuple (will raise an error)
+try:
+    fruits[0] = 'Apricot'
+except TypeError as e:
+    print("Error:", e)
