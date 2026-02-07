@@ -1,0 +1,20 @@
+# Parent class
+class Shape:
+    def draw(self):
+        return "Drawing a shape"
+# Subclasses
+class Circle(Shape):
+    def draw(self):
+        return "Drawing a circle"
+class Square(Shape):
+    def draw(self):
+        return "Drawing a square"
+# Function using polymorphism
+def show_shape(shape):
+    print(shape.draw())
+# Create objects of subclasses
+circle = Circle()
+square = Square()
+# Use polymorphism
+show_shape(circle)
+show_shape(square)
