@@ -1,0 +1,68 @@
+# arithmetic operators
+a = 5
+b = 2
+print('<=====arithmetic operators=====>', end='\n')
+print('a+b:', a + b)
+print('a-b:', a - b)
+print('a/b:', a / b)
+print('a*b:', a * b)
+print('a%b:', a % b)
+print('a//b:', a // b)
+print('a**b:', a ** b)
+# logical operators
+a = (1 > 5)
+b = (2 < 5)
+# comparison operators
+a = 5
+b = 2
+print('<=====Comparison operators=====>', end='\n')
+print('a==b:', a == b)
+print('a!=b:', a != b)
+print('a<b:', a < b)
+print('a>=b:', a >= b)
+print('a<=b',a<=b)
+#Assignment Operators
+print('<=Assignment operators====>',end='\n')
+a=5
+print('a=',a)
+a&=3
+print('a&=3',a)
+a|=3
+print('a|=3',a)
+a^=3
+print('a^=3',a)
+a<<=3
+print('a<<=3',a)
+a>>=3
+print('a>>=3',a)
+a=6
+a+=3
+print('a+=3',a)
+a-=3
+print('a-=3',a)
+a*=3
+print('a*=3',a)
+a/=3
+print('a/=3',a)
+a//=3
+print('a//=3',a)
+a**=3
+print('a**=3',a)
+#Identity operators
+# Identity operators
+l1 = ['ece', 'cse']
+l2 = ['ece', 'cse']
+l3 = l1
+print('<====Identity operators====>', end='\n')
+print('l1 is l3:', l1 is l3)
+print('l1 is l2:', l1 is l2)
+print('l1 is not l2:', l1 is not l2)
+print('l1 == l2:', l1 == l2)
+# Membership operators
+l1 = ['ece', 'cse']
+l2 = ['ece', 'cse']
+l3 = l1
+print('<====Membership operators====>', end='\n')
+print('ece in l3:', 'ece' in l3)
+print('eee in l2:', 'cse' in l2)
+print('eee not in l2:', 'eee' not in l2)
