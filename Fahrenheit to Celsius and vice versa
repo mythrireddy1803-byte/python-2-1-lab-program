@@ -1,0 +1,18 @@
+print('Enter (F) to convert temperature from fahrenheit to celsius')
+print('Enter (C) to convert temperature from celsius to fahrenheit')
+print('Enter (X) to Exit')
+while True:
+    input_temp = input('Enter your choice (F/C/X): ').upper()
+    if input_temp == 'F':
+        fahren_temp = float(input('Enter fahrenheit temperature to convert: '))
+        celsius_temp = (fahren_temp - 32) * 5 / 9
+        print(f'{fahren_temp:.2f}° Fahrenheit equals {celsius_temp:.2f}° Celsius')
+    elif input_temp == 'C':
+        celsius_temp = float(input('Enter celsius temperature to convert: '))
+        fahren_temp = (9 / 5 * celsius_temp) + 32
+        print(f'{celsius_temp:.2f}° Celsius equals {fahren_temp:.2f}° Fahrenheit')
+    elif input_temp == 'X':
+        print('Thank You........')
+        break
+    else:
+        print('Invalid choice. Please enter F, C, or X.')
