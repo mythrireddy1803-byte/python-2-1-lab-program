@@ -1,0 +1,5 @@
+num = int(input('Enter Your number:'))
+sum = 0
+for i in range(num + 1):
+    sum += i ** 2
+print('Sum of Squares for the first', num, 'numbers is:', sum)
