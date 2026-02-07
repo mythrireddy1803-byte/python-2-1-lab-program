@@ -1,0 +1,13 @@
+def findsum(num):
+    for x in range(len(num)):
+        if num[x] < 0:
+            num[x] = 0
+    return sum(num)
+mylist = []
+size = int(input('Enter size of list:'))
+for k in range(size):
+    mylist.append(int(input('Enter value:')))
+print('My list is', mylist)
+result = findsum(mylist)
+print('My list is', mylist)
+print('Result is:', result)
