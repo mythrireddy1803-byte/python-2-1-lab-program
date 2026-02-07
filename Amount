@@ -1,0 +1,26 @@
+#include <stdio.h>
+void calculate_notes(int amount) {
+    int denominations[] = {500, 100, 50, 20, 10, 5, 1};
+    int notes[7] = {0};
+    int i;
+    printf("Minimum number of notes required:\n");
+   for (i = 0; i < 7; i++) {
+        notes[i] = amount / denominations[i];
+        amount %= denominations[i];
+        if (notes[i] > 0) {
+            printf("%d x %d\n", notes[i], denominations[i]);
+        }
+    }
+}
+int main() {
+    int amount;
+    printf("Enter amount: ");
+    scanf("%d", &amount);
+
+    if (amount < 0) {
+        printf("Invalid amount\n");
+        return 1;
+    }
+    calculate_notes(amount);
+    return 0;
+}
