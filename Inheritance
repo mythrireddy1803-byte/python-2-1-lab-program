@@ -1,0 +1,20 @@
+# base class
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+   def display(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+# derived class
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+    def display(self):
+        super().display()
+        print(f"Student ID: {self.student_id}")
+# create object of the Student class
+student1 = Student("John Doe", 20, "S12345")
+# calling methods
+student1.display()
