@@ -1,0 +1,37 @@
+a=0B1010 #binary integer literal
+b=0b0101 #binary integer literal
+c=123 #decimal integer literal
+d=0o12 #octal integer literal
+e=0XA #hexa decimal integer literal
+f=2.5638978965 #float literal
+comp=2+3.5j #complex literal
+str1='hello welcome' #string literal
+str2="hello welcome" #string literal
+str3="""welcome to
+rajampet""" #string literal
+ch='E' #character literal
+x=True+5 # boolean literal
+y=False+6 # boolean literal
+print(a,b,c,d,e,str1,str2,str3,ch,format(f,'.2f'),comp,comp.real,comp.imag,sep='\n')
+print(x,y)
+l=[1,'ECE',2.5] #list literal
+print(l)
+t=(1,'ece',2.5) #tuple literal
+print(t)
+d={'1':'ece','2':'cse','3':'eee'} #dictionary literal
+print(d)
+s={1,2,3} #set literal
+print(s)
+num=25
+a=b=c=50
+x,y,z=1,'ece',2.5
+name='aits'
+my_tax=0.08
+print(num,a,b,c,x,y,z,name,my_tax)
+print(num)
+print(id(num))
+k=20
+print(k)
+print(id(k))
+print(type(num))
+print(type(name))
