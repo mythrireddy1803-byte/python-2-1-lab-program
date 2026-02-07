@@ -1,0 +1,13 @@
+class Person:
+    def __init__(self, name="", age=0):
+        self.name = name
+        self.age = age
+    def display_info(self):
+        print(f"{self.name} is {self.age} years old")
+# create person1 object
+person1 = Person("Blue", 10)
+# create person2 object
+person2 = Person("Red", 15)
+# display information using the method
+person1.display_info()
+person2.display_info()
