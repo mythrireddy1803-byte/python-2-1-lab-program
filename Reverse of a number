@@ -1,0 +1,8 @@
+num = int(input('Enter Your Number:'))
+original = num
+reverse = 0
+while original != 0:
+    rem = original % 10
+    reverse = reverse * 10 + rem
+    original //= 10
+print('Reverse of a', num, 'is:', reverse)
