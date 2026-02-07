@@ -1,0 +1,24 @@
+class Animal:
+    def __init__(self, name):
+        self.__name = name
+        def speak(self):
+        return "Some generic animal sound"
+        def get_name(self):
+        return self.__name
+# Subclass 1
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+# Subclass 2
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+# Function using polymorphism
+def make_animal_speak(animal):
+    print(f"{animal.get_name()} says {animal.speak()}")
+# Create objects of subclasses
+dog = Dog("Buddy")
+cat = Cat("Whiskers")
+# Use polymorphism
+make_animal_speak(dog)
+make_animal_speak(cat)
