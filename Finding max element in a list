@@ -1,0 +1,11 @@
+# Read elements into a list
+num_elements = int(input("Enter the number of elements: "))
+elements = []
+for i in range(num_elements):
+    element = int(input(f"Enter element {i+1}: "))
+    elements.append(element)
+# Display the elements
+print("Elements in the list:", elements)
+# Find the maximum element
+max_element = max(elements)
+print("Maximum element in the list:", max_element)
